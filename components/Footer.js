@@ -5,56 +5,69 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 
 export default function Footer() {
   return (
-    <footer className='p-4 bg-white md:px-6 md:py-8'>
+    <footer id='contact' className='p-4 bg-white md:px-6 md:py-8'>
       <div className='px-[5vw] sm:flex sm:items-center sm:justify-between'>
-        <div className='flex space-x-3 items-center text-2xl font-semibold'>
-          <AiOutlineCopyrightCircle />
-          <span>N.T.LUAN</span>
-        </div>
-        <ul className='flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 '>
+        <a href='#home'>
+          <div className='flex space-x-3 items-center text-3xl font-semibold hover:cursor-pointer'>
+            <AiOutlineCopyrightCircle />
+            <span>N.T.LUAN</span>
+          </div>
+        </a>
+        <ul className='flex flex-wrap items-center mb-6 text-gray-500 sm:mb-0 text-xl'>
           <li>
-            <a href='#' className='mr-4 hover:underline md:mr-6 '>
+            <a href='#about' className='mr-4 hover:underline md:mr-6 '>
               About
             </a>
           </li>
           <li>
-            <a href='#' className='mr-4 hover:underline md:mr-6'>
-              Tools
+            <a href='#skills' className='mr-4 hover:underline md:mr-6'>
+              Skills
             </a>
           </li>
           <li>
-            <a href='#' className='mr-4 hover:underline md:mr-6 '>
+            <a href='#projects' className='mr-4 hover:underline md:mr-6 '>
               Projects
-            </a>
-          </li>
-          <li>
-            <a href='#' className='hover:underline'>
-              Contact
             </a>
           </li>
         </ul>
       </div>
       <hr className='my-6 border-gray-300 sm:mx-auto lg:my-8' />
-      <div className='flex justify-around px-40 text-gray-500 sm:text-center'>
-        <div>
-          <ImPhone className='inline-block mr-2' />
-          <span>Phone</span>
+      <div className='flex flex-col md:flex-row justify-around px-20 text-gray-500 sm:text-center text-xl'>
+        <div className='flex flex-col'>
+          <div className='flex justify-center items-center'>
+            <ImPhone className='inline-block mr-2' />
+            <span>(+81) 080-4692-4098</span>
+          </div>
+          <div className='flex justify-center items-center'>
+            <MdEmail className='inline-block mr-2' />
+            <span>email@thanhluannguyen.com</span>
+          </div>
+          <div className='flex justify-center items-center'>
+            <MdPlace className='inline-block mr-2' />
+            <span>東京都足立区竹ノ塚２丁目</span>
+          </div>
         </div>
-        <div>
-          <MdEmail className='inline-block mr-2' />
-          <span>Email</span>
-        </div>
-        <div>
-          <MdPlace className='inline-block mr-2' />
-          <span>Address</span>
-        </div>
-        <div>
-          <BsGithub className='inline-block mr-2' />
-          <span>Github</span>
-        </div>
-        <div>
-          <BsLinkedin className='inline-block mr-2' />
-          <span>Linkedin</span>
+        <div className='flex flex-col space-y-4'>
+          <div className='flex justify-center items-center  hover:underline hover:cursor-pointer'>
+            <a
+              href='https://github.com/thanh-luan-nguyen'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <BsGithub className='inline-block mr-2' />
+            </a>
+            <span>Github</span>
+          </div>
+          <div className='flex justify-center items-center hover:underline hover:cursor-pointer'>
+            <a
+              href='https://www.linkedin.com/in/nguyen-thanh-luan-424111166/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <BsLinkedin className='inline-block mr-2' />
+            </a>
+            <span>Linkedin</span>
+          </div>
         </div>
       </div>
     </footer>

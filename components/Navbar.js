@@ -1,15 +1,15 @@
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import my_avatar from '../public/static/images/profile_image01_small.jpg'
+import my_avatar from '../public/images/profile_image01_small.jpg'
 import Image from 'next/image'
 import { RoughNotation } from 'react-rough-notation'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'About', href: '#about', current: false },
+  { name: 'Skills', href: '#skills', current: false },
+  { name: 'Projects & Hobbies', href: '#projects', current: false },
+  { name: 'Contact', href: '#contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -20,7 +20,7 @@ export default function Example() {
   return (
     <Disclosure as='nav' className='bg-gray-800'>
       {({ open }) => (
-        <>
+        <div id='home'>
           <div className='max-w-7xl mx-auto px-2 sm:px-6 lg:px-8'>
             <div className='relative flex items-center justify-between h-16'>
               <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
@@ -37,7 +37,7 @@ export default function Example() {
                 <div className='flex-shrink-0 flex items-center'>
                   <span className='text-xl block w-auto text-white font-semibold'>
                     <RoughNotation show={true} type='underline' iterations={2}>
-                      Thanh Luan
+                      NgThanhLuan
                     </RoughNotation>
                   </span>
                 </div>
@@ -62,18 +62,35 @@ export default function Example() {
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                <AiFillGithub className='h-8 w-8 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white hover:cursor-pointer focus:outline-none' />
-                <AiFillLinkedin className='h-8 w-8 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white hover:cursor-pointer focus:outline-none' />
+                <a
+                  href='https://github.com/thanh-luan-nguyen'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <AiFillGithub className='h-8 w-8 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white hover:cursor-pointer focus:outline-none' />
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/nguyen-thanh-luan-424111166/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <AiFillLinkedin className='h-8 w-8 bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white hover:cursor-pointer focus:outline-none' />
+                </a>
 
-                {/* Profile dropdown */}
                 <div className='ml-2 flex items-center'>
-                  <Image
-                    className='rounded-full'
-                    height='36'
-                    width='36'
-                    src={my_avatar}
-                    alt=''
-                  />
+                  <a
+                    href='https://www.facebook.com/luan.nguyenthanh.71'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <Image
+                      className='rounded-full'
+                      height='36'
+                      width='36'
+                      src={my_avatar}
+                      alt=''
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -99,7 +116,7 @@ export default function Example() {
               ))}
             </div>
           </Disclosure.Panel>
-        </>
+        </div>
       )}
     </Disclosure>
   )

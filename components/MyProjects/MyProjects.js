@@ -67,7 +67,7 @@ export default function MyProjects() {
 
   return (
     <div id='projects' className={styles.ProjectsComponent}>
-      <Title>Projects</Title>
+      <Title>プロジェクト</Title>
       <div className={styles.CarouselContainer}>
         <div className={styles.ProjGifs}>
           <img

@@ -10,8 +10,8 @@ const highlightText = text => {
 
 export default function AboutMe() {
   return (
-    <div>
-      <Title>About me</Title>
+    <div id="about">
+      <Title>私について</Title>
       <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-[2vw] '>
         <img
           src='/自己紹介.png'

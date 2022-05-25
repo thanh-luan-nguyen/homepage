@@ -16,8 +16,6 @@ function getTools(images, tools) {
 }
 
 const tools = props => {
-  // const arrow = props.mode === 'light' ? arrowLight : arrowDark;
-
   const frontendTools = []
   const backendTools = []
   const otherTools = []
@@ -27,8 +25,8 @@ const tools = props => {
   getTools(otherImages, otherTools)
 
   return (
-    <div id='tools' className={styles.ToolsComponent}>
-      <Title>Tools</Title>
+    <div id='skills' className={styles.ToolsComponent}>
+      <Title>スキル</Title>
       <p className={styles.P}>front-end</p>
       <div className={styles.ToolsContainer}>{frontendTools}</div>
       <p className={styles.P}>back-end</p>
