@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import myProjects from './projectsIndex'
-import { carouselArrow } from '../../public/assets/carousel-arrow.svg'
-import { useSwipeable } from 'react-swipeable'
 import styles from './projects.module.css'
 import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti'
 import globalStyles from '../../styles/Home.module.css'
 import LinkContainer from './LinkContainer'
+import Title from '../_sub_components/TItle'
 
 export default function Projects() {
   const [project1, setProject1] = useState(myProjects[0])
@@ -59,23 +58,16 @@ export default function Projects() {
     }, 580)
   }
 
-  const handlers = useSwipeable({
-    onSwipedLeft: e => onPreviousHandler(),
-    preventDefaultTouchmoveEvent: false,
-    trackMouse: true,
-    onSwipedRight: e => onNextHandler(),
-  })
+  // const handlers = useSwipeable({
+  //   onSwipedLeft: e => onPreviousHandler(),
+  //   preventDefaultTouchmoveEvent: false,
+  //   trackMouse: true,
+  //   onSwipedRight: e => onNextHandler(),
+  // })
 
   return (
     <div id='projects' className={styles.ProjectsComponent}>
-      <h2
-        className={
-          'font-extrabold text-[10vw] xl:text-[7vw] text-white mb-16 ml-16 ' +
-          globalStyles.Stroke
-        }
-      >
-        Projects
-      </h2>
+      <Title>Projects</Title>
       <div className={styles.CarouselContainer}>
         <div className={styles.ProjGifs}>
           <img

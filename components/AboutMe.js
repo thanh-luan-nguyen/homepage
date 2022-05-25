@@ -1,35 +1,52 @@
+import Title from './_sub_components/TItle'
+
+const highlightText = text => {
+  return (
+    <span className='before:block before:absolute before:-inset-1 before:-skew-y-1 before:rounded before:bg-opacity-80 before:bg-red-400 relative inline-block'>
+      <span className='relative text-white'>{text}</span>
+    </span>
+  )
+}
+
 export default function AboutMe() {
   return (
     <div>
-      <h2>About me</h2>
-      <p>
-        Can an opera singer teach themself to program? This portfolio website
-        can be your answer.
-        <br />
-        <br />
-        After performing on 3 different continents, winning several vocal
-        competitions, and having met my spouse in an Opera festival, I felt like
-        I had accomplished what I needed to in opera. Also, there were many
-        itches that opera simply couldn&apos;t scratch. Then I discovered
-        programming.
-        <br />
-        <br />
-        Web development allows me to express my creativity in a more satisfying
-        way, to create with clear structure and to focus in on details in a way
-        I&apos;ve never been able to do before.
-        <br />
-        <br />
-        After over a year of study, I am ready to contribute to the world in
-        this new way, and I&apos;m looking forward to bringing the best traits of a
-        creative developer and focused opera singer to the table. Over my career
-        I have learned how to get things done, keep my cool in dire moments (oh,
-        those stage mishaps the public never even realised happened...), work
-        with lots of different types of people, and take initiative to pick up
-        slack when needed. That plus my ability to learn quickly has helped me
-        to become a creative but also grounded developer (and possibly the only
-        person who feels as good about a standing ovation as about getting that
-        bug out, finally!). I hope you enjoy my projects. Now, cue the curtains!
-      </p>
+      <Title>About me</Title>
+      <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-[2vw] '>
+        <img
+          src='/自己紹介.png'
+          alt='自己紹介'
+          className='w-full lg:w-[40vw] lg:h-[23vw] rounded-2xl'
+          styles={
+            'box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'
+          }
+        />
+        <p className='text-gray-50 text-lg lg:text-2xl font-semibold'>
+          私は１年間以上にわたって独学でプログラミングと開発を勉強してきました。フロンドエンド系の
+          {highlightText('HTML, CSS, Javascript、PHP')}
+          はもちろん, バックエンド系の{highlightText('Java, Python, NodeJS')}
+          に関しても知見があります。Javascriptライブラリに関しては自分のプロジェクトの開発で
+          {highlightText('React, NextJs, jQuery, Redux')}
+          等の知見があります。コードバージョン管理に関しては、
+          {highlightText('git,github')}
+          の操作ができます。データーベースに関しては
+          {highlightText('MySQLやFirebase')}
+          などでデータベースシステムを構築できます。
+          <br />
+          <br />
+          実務での開発の経験がありまして、前職では自社のホームページの保守、編集、追加の作業を担当していました。実務の必要に応じて、
+          {highlightText('Wordpress')}
+          を学習しました。表計算の実務スキルもありまして、前職ではデータ集計、入力作業を担っていました。様々な関数を使用でき、マクロの作り方も勉強しました。
+          <br />
+          <br />
+          私の強みは学習意欲の高さです。自分のプロジェクトを作るのだけではなく、試験勉強にも励んでいます。例えば、2022年5月に
+          {highlightText('基本情報技術者試験')}
+          に70点以上取得でき合格しました。そのほかに、Java認定資格シルバーも勉強しています。資格の勉強のほかに、自分なりにJavaアプリ・Webのプロジェクトを開発しております。
+          <br />
+          <br />
+          今後も状況に応じて必要性の高いプログラミング言語を中心に学んでいきたいと考えています。
+        </p>
+      </div>
     </div>
   )
 }

@@ -1,15 +1,19 @@
+import AboutMe from '../components/AboutMe'
 import ContainerBlock from '../components/ContainerBlock'
 import Hero from '../components/Hero'
-import Projects from '../components/projects/Projects'
-import Skills from '../components/skills/Skills'
+import Hobbies from '../components/Hobbies/Hobbies'
+import Projects from '../components/Projects/Projects'
+import Tools from '../components/Tools/Tools'
 
 export default function Home() {
   return (
     <ContainerBlock>
-      <div className='p-[5vw] overflow-hidden'>
+      <div className='p-[5vw] pt-0 overflow-hidden'>
         <Hero />
-        <Skills />
+        <AboutMe />
+        <Tools />
         <Projects />
+        <Hobbies />
       </div>
     </ContainerBlock>
   )

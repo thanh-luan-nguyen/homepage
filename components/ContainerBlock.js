@@ -8,7 +8,7 @@ export default function ContainerBlock({ children }) {
       <Head>
         <title>Thanh Luan</title>
       </Head>
-      <main className='dark:bg-gray-800'>
+      <main>
         <Navbar />
         <div className=''>{children}</div>
         <Footer />
