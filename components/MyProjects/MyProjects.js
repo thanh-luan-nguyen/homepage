@@ -6,7 +6,7 @@ import globalStyles from '../../styles/Home.module.css'
 import LinkContainer from './LinkContainer'
 import Title from '../_sub_components/Title'
 
-export default function Projects() {
+export default function MyProjects() {
   const [project1, setProject1] = useState(myProjects[0])
   const [project2, setProject2] = useState(myProjects[1])
   const [project3, setProject3] = useState(
