@@ -83,6 +83,7 @@ const myProjects = [
     demo: 'https://thanh-luan-nguyen.github.io/faekbook',
     code: 'https://github.com/thanh-luan-nguyen/faekbook',
   },
+  // *************************************************
   // {
   //   name: 'Google homepage',
   //   gif: '/projects/google.gif',
@@ -164,6 +165,91 @@ const myProjects = [
   // {
   //   name: 'faekbook',
   //   gif: '/projects/faekbook.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/faekbook',
+  //   code: 'https://github.com/thanh-luan-nguyen/faekbook',
+  // },
+  // *************************************************
+  // {
+  //   name: 'Google homepage',
+  //   gif: '../../public/projects/google.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/google-homepage',
+  //   code: 'https://github.com/thanh-luan-nguyen/google-homepage',
+  // },
+  // {
+  //   name: 'Youtube videopage',
+  //   gif: '../../public/projects/youtube.gif',
+  //   demo: 'https://g5gud.csb.app/',
+  //   code: 'https://codesandbox.io/s/youtube-video-page-g5gud',
+  // },
+  // {
+  //   name: 'rock paper scissors',
+  //   gif: '../../public/projects/rock-paper-scissors.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/rock-paper-scissors',
+  //   code: 'https://github.com/thanh-luan-nguyen/rock-paper-scissors',
+  // },
+  // {
+  //   name: 'calculator app',
+  //   gif: '../../public/projects/calculator.gif',
+  //   demo: 'https://github.com/thanh-luan-nguyen/thanh-luan-nguyen/blob/main/project_preview_gifs/theOdinProject/TicTacToe.gif',
+  //   code: 'https://github.com/thanh-luan-nguyen/calculator-app',
+  // },
+  // {
+  //   name: 'etch-a-sketch',
+  //   gif: '../../public/projects/etch-a-sketch.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/etch-a-sketch/',
+  //   code: 'https://github.com/thanh-luan-nguyen/etch-a-sketch',
+  // },
+  // {
+  //   name: 'tic-tac-toe',
+  //   gif: '../../public/projects/tictactoe.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/tic-tac-toe',
+  //   code: 'https://github.com/thanh-luan-nguyen/tic-tac-toe',
+  // },
+  // {
+  //   name: 'memory card game',
+  //   gif: '../../public/projects/memory-card.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/memory-card-game',
+  //   code: 'https://github.com/thanh-luan-nguyen/memory-card-game',
+  // },
+  // {
+  //   name: 'restaurant page',
+  //   gif: '../../public/projects/restaurant.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/restaurant-page',
+  //   code: 'https://github.com/thanh-luan-nguyen/restaurant-page',
+  // },
+  // {
+  //   name: 'book keeping app',
+  //   gif: '../../public/projects/library.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/book-keeping-app',
+  //   code: 'https://github.com/thanh-luan-nguyen/book-keeping-app',
+  // },
+  // {
+  //   name: 'cv-builder',
+  //   gif: '../../public/projects/cv-builder.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/cv-builder',
+  //   code: 'https://github.com/thanh-luan-nguyen/cv-builder',
+  // },
+  // {
+  //   name: 'weather app',
+  //   gif: '../../public/projects/weather.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/weather-app',
+  //   code: 'https://github.com/thanh-luan-nguyen/weather-app',
+  // },
+  // {
+  //   name: 'todolist app',
+  //   gif: '../../public/projects/todolist.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/to-do-list',
+  //   code: 'https://github.com/thanh-luan-nguyen/to-do-list',
+  // },
+  // {
+  //   name: 'shopping website',
+  //   gif: '../../public/projects/shopping.gif',
+  //   demo: 'https://thanh-luan-nguyen.github.io/shopping-cart',
+  //   code: 'https://github.com/thanh-luan-nguyen/shopping-cart',
+  // },
+  // {
+  //   name: 'faekbook',
+  //   gif: '../../public/projects/faekbook.gif',
   //   demo: 'https://thanh-luan-nguyen.github.io/faekbook',
   //   code: 'https://github.com/thanh-luan-nguyen/faekbook',
   // },

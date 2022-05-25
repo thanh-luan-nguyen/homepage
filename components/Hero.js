@@ -24,7 +24,14 @@ export default function Hero() {
           </RoughNotationHighlight>
         </div>
         <div className='relative my-auto ml-auto w-1/2 xl:w-2/5'>
-          <Image className='' src={profile_image} alt='' width='' height='' />
+          <Image
+            className=''
+            src={profile_image}
+            alt=''
+            width=''
+            height=''
+            priority={true}
+          />
           <div className='absolute w-24 md:w-32 lg:40 bottom-10 -left-16 rotate-90'>
             <Image className='' src={arrow} alt='' width='' height='' />
           </div>
