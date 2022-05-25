@@ -2,7 +2,7 @@ import styles from './tools.module.css'
 import Tool from './tool'
 import { frontendImages, backendImages, otherImages } from './toolIndex'
 import Image from 'next/image'
-import Title from '../_sub_components/TItle'
+import Title from '../_sub_components/Title'
 
 function getTools(images, tools) {
   images.map(({ id, source, name }) => {

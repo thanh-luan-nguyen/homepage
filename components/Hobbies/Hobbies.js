@@ -1,4 +1,4 @@
-import Title from '../_sub_components/TItle'
+import Title from '../_sub_components/Title'
 import styles from './hobbies.module.css'
 
 export default function Hobbies() {

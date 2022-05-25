@@ -4,7 +4,7 @@ import styles from './projects.module.css'
 import { TiArrowLeftThick, TiArrowRightThick } from 'react-icons/ti'
 import globalStyles from '../../styles/Home.module.css'
 import LinkContainer from './LinkContainer'
-import Title from '../_sub_components/TItle'
+import Title from '../_sub_components/Title'
 
 export default function Projects() {
   const [project1, setProject1] = useState(myProjects[0])

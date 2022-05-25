@@ -1,4 +1,4 @@
-import Title from './_sub_components/TItle'
+import Title from './_sub_components/Title'
 
 const highlightText = text => {
   return (
