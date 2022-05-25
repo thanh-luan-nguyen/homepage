@@ -7,10 +7,8 @@ import globalStyles from '../styles/Home.module.css'
 
 export default function Hero() {
   return (
-    <div
-      className={'h-full pb-10 md:pb-20 lg:pb-40 ' + globalStyles.Background}
-    >
-      <div className='flex flex-col md:flex-row justify-between xl:justify-evenly px-10 xl:px-28'>
+    <div className={'h-full mb-10 md:mb-20 lg:mb-40 '}>
+      <div className='flex flex-col md:flex-row justify-between xl:justify-evenly'>
         <div className='w-1/2 mt-5 md:w-auto md:my-auto'>
           <RoughNotationUnderline>Hi, I am:</RoughNotationUnderline>
           <RoughNotationHighlight delay={1000} color='#F59E0B'>

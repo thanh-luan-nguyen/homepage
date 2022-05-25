@@ -67,19 +67,40 @@ export default function Projects() {
   })
 
   return (
-    <div className={'overflow-hidden ' + globalStyles.Background}>
-      <div id='projects' className={styles.ProjectsComponent}>
-        <h2
-          mode='light'
-          className={
-            'font-extrabold text-[10vw] text-white mb-16 ml-16 ' +
-            globalStyles.Stroke
-          }
-        >
-          Projects
-        </h2>
-        <div className={styles.CarouselContainer}>
-          <div className={styles.ProjGifs}>
+    <div id='projects' className={styles.ProjectsComponent}>
+      <h2
+        className={
+          'font-extrabold text-[10vw] xl:text-[7vw] text-white mb-16 ml-16 ' +
+          globalStyles.Stroke
+        }
+      >
+        Projects
+      </h2>
+      <div className={styles.CarouselContainer}>
+        <div className={styles.ProjGifs}>
+          <img
+            goforward={goForwardButton}
+            goback={goBackButton}
+            onAnimationEnd={() => {
+              setGoBackButton(0)
+              setGoForwardButton(0)
+            }}
+            src={project1.gif}
+            className={styles.EarlierProj}
+            alt=''
+          />
+          <img
+            goforward={goForwardButton}
+            goback={goBackButton}
+            onAnimationEnd={() => {
+              setGoBackButton(0)
+              setGoForwardButton(0)
+            }}
+            src={project2.gif}
+            className={styles.PrevProj}
+            alt=''
+          />
+          <div className={styles.Swipe}>
             <img
               goforward={goForwardButton}
               goback={goBackButton}
@@ -87,82 +108,58 @@ export default function Projects() {
                 setGoBackButton(0)
                 setGoForwardButton(0)
               }}
-              src={project1.gif}
-              className={styles.EarlierProj}
-              alt=''
-            />
-            <img
-              goforward={goForwardButton}
-              goback={goBackButton}
-              onAnimationEnd={() => {
-                setGoBackButton(0)
-                setGoForwardButton(0)
-              }}
-              src={project2.gif}
-              className={styles.PrevProj}
-              alt=''
-            />
-            <div className={styles.Swipe}>
-              <img
-                goforward={goForwardButton}
-                goback={goBackButton}
-                onAnimationEnd={() => {
-                  setGoBackButton(0)
-                  setGoForwardButton(0)
-                }}
-                src={project3.gif}
-                className={styles.CurrentProj}
-                alt=''
-              />
-            </div>
-            <img
-              goforward={goForwardButton}
-              goback={goBackButton}
-              onAnimationEnd={() => {
-                setGoBackButton(0)
-                setGoForwardButton(0)
-              }}
-              src={project4.gif}
-              className={styles.NextProj}
-              alt=''
-            />
-            <img
-              goforward={goForwardButton}
-              goback={goBackButton}
-              onAnimationEnd={() => {
-                setGoBackButton(0)
-                setGoForwardButton(0)
-              }}
-              src={project5.gif}
-              className={styles.LaterProj}
+              src={project3.gif}
+              className={styles.CurrentProj}
               alt=''
             />
           </div>
-          <div className={styles.NameContainer}>
-            <div
-              onClick={onPreviousHandler}
-              onAnimationEnd={() => setGoForwardButton(0)}
-            >
-              <TiArrowLeftThick className='hover:cursor-pointer text-[5vw] hover:scale-125 ease-in duration-300' />
-            </div>
-            <p
-              className={
-                'font-bold text-[3vw]  text-white ' + globalStyles.Stroke
-              }
-            >
-              {projectName}
-            </p>
-            <div
-              onClick={onNextHandler}
-              onAnimationEnd={() => setGoBackButton(0)}
-            >
-              <TiArrowRightThick className='hover:cursor-pointer text-[5vw] hover:scale-125 ease-in duration-300' />
-            </div>
+          <img
+            goforward={goForwardButton}
+            goback={goBackButton}
+            onAnimationEnd={() => {
+              setGoBackButton(0)
+              setGoForwardButton(0)
+            }}
+            src={project4.gif}
+            className={styles.NextProj}
+            alt=''
+          />
+          <img
+            goforward={goForwardButton}
+            goback={goBackButton}
+            onAnimationEnd={() => {
+              setGoBackButton(0)
+              setGoForwardButton(0)
+            }}
+            src={project5.gif}
+            className={styles.LaterProj}
+            alt=''
+          />
+        </div>
+        <div className={styles.NameContainer}>
+          <div
+            onClick={onPreviousHandler}
+            onAnimationEnd={() => setGoForwardButton(0)}
+          >
+            <TiArrowLeftThick className='hover:cursor-pointer text-[5vw] hover:scale-125 ease-in duration-300' />
           </div>
-          <div className='flex justify-center mt-8 space-x-[8vw]'>
-            <LinkContainer href={projectCode}>Source Code</LinkContainer>
-            <LinkContainer href={projectDemo}>Live Demo</LinkContainer>
+          <p
+            className={
+              'font-bold text-[3vw]  text-white ' + globalStyles.Stroke
+            }
+          >
+            {projectName}
+          </p>
+          <div
+            onClick={onNextHandler}
+            onAnimationEnd={() => setGoBackButton(0)}
+          >
+            <TiArrowRightThick className='hover:cursor-pointer text-[5vw] hover:scale-125 ease-in duration-300' />
           </div>
+        </div>
+        <div className='flex justify-center mt-8 space-x-[8vw]'>
+          <LinkContainer href={projectCode}>Source Code</LinkContainer>
+          <LinkContainer href={projectDemo}>Live Demo</LinkContainer>
         </div>
       </div>
     </div>
