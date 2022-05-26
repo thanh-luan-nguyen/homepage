@@ -3,19 +3,21 @@ const frontend = [
   'javascript',
   'sass',
   'bootstrap',
-  'pug',
+  'tailwind',
+  'jquery',
   'react',
   'redux',
   'next',
 ]
 const backend = [
   'nodejs',
+  'java',
   'express',
   'mongodb',
   'mongoose',
-  'passportjs',
+  'mysql',
   'firebase',
-  'cloudinary',
+  'servlet',
 ]
 const other = ['git', 'npm', 'webpack', 'heroku', 'github', 'jest', 'jasmine']
 

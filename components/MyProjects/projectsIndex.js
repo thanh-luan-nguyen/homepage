@@ -1,15 +1,33 @@
 const myProjects = [
   {
-    name: 'Google homepage',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653389562/personal_homepage/projects/theOdinProjects/Google_Homepage_ihmqye.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/google-homepage',
-    code: 'https://github.com/thanh-luan-nguyen/google-homepage',
+    name: 'weather app',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653403651/personal_homepage/projects/theOdinProjects/Weather_App_klkm3o.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/weather-app',
+    code: 'https://github.com/thanh-luan-nguyen/weather-app',
   },
   {
-    name: 'Youtube videopage',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653403371/personal_homepage/projects/theOdinProjects/Youtube_Homepage_xhrb67.gif',
-    demo: 'https://g5gud.csb.app/',
-    code: 'https://codesandbox.io/s/youtube-video-page-g5gud',
+    name: 'shopping website',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402827/personal_homepage/projects/theOdinProjects/Shopping_Cart_d4ypno.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/shopping-cart',
+    code: 'https://github.com/thanh-luan-nguyen/shopping-cart',
+  },
+  {
+    name: 'faekbook',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402828/personal_homepage/projects/theOdinProjects/faekbook_z5klwz.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/faekbook',
+    code: 'https://github.com/thanh-luan-nguyen/faekbook',
+  },
+  {
+    name: 'todolist app',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402828/personal_homepage/projects/theOdinProjects/Todo_List_sux3jd.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/to-do-list',
+    code: 'https://github.com/thanh-luan-nguyen/to-do-list',
+  },
+  {
+    name: 'cv-builder',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402826/personal_homepage/projects/theOdinProjects/CV_Builder_zj4jhz.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/cv-builder',
+    code: 'https://github.com/thanh-luan-nguyen/cv-builder',
   },
   {
     name: 'rock paper scissors',
@@ -54,35 +72,18 @@ const myProjects = [
     code: 'https://github.com/thanh-luan-nguyen/book-keeping-app',
   },
   {
-    name: 'cv-builder',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402826/personal_homepage/projects/theOdinProjects/CV_Builder_zj4jhz.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/cv-builder',
-    code: 'https://github.com/thanh-luan-nguyen/cv-builder',
+    name: 'Google homepage',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653389562/personal_homepage/projects/theOdinProjects/Google_Homepage_ihmqye.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/google-homepage',
+    code: 'https://github.com/thanh-luan-nguyen/google-homepage',
   },
   {
-    name: 'weather app',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653403651/personal_homepage/projects/theOdinProjects/Weather_App_klkm3o.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/weather-app',
-    code: 'https://github.com/thanh-luan-nguyen/weather-app',
+    name: 'Youtube videopage',
+    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653403371/personal_homepage/projects/theOdinProjects/Youtube_Homepage_xhrb67.gif',
+    demo: 'https://g5gud.csb.app/',
+    code: 'https://codesandbox.io/s/youtube-video-page-g5gud',
   },
-  {
-    name: 'todolist app',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402828/personal_homepage/projects/theOdinProjects/Todo_List_sux3jd.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/to-do-list',
-    code: 'https://github.com/thanh-luan-nguyen/to-do-list',
-  },
-  {
-    name: 'shopping website',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402827/personal_homepage/projects/theOdinProjects/Shopping_Cart_d4ypno.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/shopping-cart',
-    code: 'https://github.com/thanh-luan-nguyen/shopping-cart',
-  },
-  {
-    name: 'faekbook',
-    gif: 'https://res.cloudinary.com/di4daizto/image/upload/v1653402828/personal_homepage/projects/theOdinProjects/faekbook_z5klwz.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/faekbook',
-    code: 'https://github.com/thanh-luan-nguyen/faekbook',
-  },
+
   // *************************************************
   // {
   //   name: 'Google homepage',
