@@ -33,7 +33,7 @@ export default function Footer() {
       </div>
       <hr className='my-6 border-gray-300 sm:mx-auto lg:my-8' />
       <div className='flex flex-col md:flex-row justify-around px-20 text-gray-500 sm:text-center text-xl'>
-        <div className='flex flex-col'>
+        <div className='flex flex-col md:items-start'>
           <div className='flex justify-center items-center'>
             <ImPhone className='inline-block mr-2' />
             <span>(+81) 080-4692-4098</span>
@@ -47,7 +47,7 @@ export default function Footer() {
             <span>東京都足立区竹ノ塚２丁目</span>
           </div>
         </div>
-        <div className='flex flex-col space-y-4'>
+        <div className='flex flex-col md:items-start md:space-y-4'>
           <div className='flex justify-center items-center  hover:underline hover:cursor-pointer'>
             <a
               href='https://github.com/thanh-luan-nguyen'

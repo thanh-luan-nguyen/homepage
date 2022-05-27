@@ -7,7 +7,11 @@ export default function ContainerBlock({ children }) {
     <div className=''>
       <Head>
         <title>Thanh Luan</title>
-        <link rel='icon' href='../public/images/profile_image01_small.jpg' />
+        <link
+          rel='icon'
+          type='image/jpg'
+          href='/images/profile_image01_small.jpg'
+        />
       </Head>
       <main>
         <Navbar />

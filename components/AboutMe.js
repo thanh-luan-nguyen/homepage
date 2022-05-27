@@ -8,44 +8,64 @@ const highlightText = text => {
   )
 }
 
+const feScore = shiken => {
+  const url = 'images/' + shiken + '.png'
+  return (
+    <div className='relative w-auto mt-5'>
+      <img src={url} alt='shiken' className='w-full rounded-xl' />
+      <div className='absolute top-16 lg:top-20 left-4 md:left-8 lg:left-16 font-semibold bg-black md:text-lg rounded p-2 text-white'>
+        {shiken}
+      </div>
+    </div>
+  )
+}
+
 export default function AboutMe() {
   return (
-    <div id="about">
+    <div id='about'>
       <Title>私について</Title>
-      <div className='flex flex-col space-y-10 lg:space-y-0 lg:flex-row lg:space-x-[2vw] '>
+      <div className=''>
         <img
-          src='/自己紹介.png'
+          src='images/自己紹介.png'
           alt='自己紹介'
-          className='w-full lg:w-[40vw] lg:h-[23vw] rounded-2xl'
-          styles={
-            'box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;'
-          }
+          className='lg:float-left w-full lg:w-[50vw] rounded-2xl mb-5  lg:mr-8 lg:mb-3'
         />
         <p className='text-gray-50 text-lg lg:text-2xl font-semibold'>
           私は１年間以上にわたって独学でプログラミングと開発を勉強してきました。フロンドエンド系の
-          {highlightText('HTML, CSS, Javascript、PHP')}
-          はもちろん, バックエンド系の{highlightText('Java, Python, NodeJS')}
+          {highlightText('HTML, CSS, Javascript')}
+          はもちろん, バックエンド系の{highlightText('Java-servlet , NodeJS')}
           に関しても知見があります。Javascriptライブラリに関しては自分のプロジェクトの開発で
           {highlightText('React, NextJs, jQuery, Redux')}
           等の知見があります。コードバージョン管理に関しては、
-          {highlightText('git,github')}
+          {highlightText('Git, Github')}
           の操作ができます。データーベースに関しては
           {highlightText('MySQLやFirebase')}
           などでデータベースシステムを構築できます。
           <br />
           <br />
-          実務での開発の経験がありまして、前職では自社のホームページの保守、編集、追加の作業を担当していました。実務の必要に応じて、
-          {highlightText('Wordpress')}
-          を学習しました。表計算の実務スキルもありまして、前職ではデータ集計、入力作業を担っていました。様々な関数を使用でき、マクロの作り方も勉強しました。
+          実務での開発の経験がありまして、前職では自社のホームページの保守、編集、追加の作業を担当していました。実績としては、
+          {highlightText('WordpressとPHP')}
+          で自社の新規ページを作成しました。表計算の実務スキルもありまして、前職ではデータ集計・分析作業を担っていました。様々な関数を使用でき、マクロを利用できるようになりました。
           <br />
           <br />
-          私の強みは学習意欲の高さです。自分のプロジェクトを作るのだけではなく、試験勉強にも励んでいます。例えば、2022年5月に
+          私の強みは{highlightText('学習意欲')}
+          の高さです。自分のプロジェクトを作るのだけではなく、試験勉強にも励んでいます。例えば、2022年5月に
           {highlightText('基本情報技術者試験')}
-          に70点以上取得でき合格しました。そのほかに、Java認定資格シルバーも勉強しています。資格の勉強のほかに、自分なりにJavaアプリ・Webのプロジェクトを開発しております。
+          に70点以上取得でき合格しました。そのほかに、Java認定資格シルバー取得を目的に勉強しています。資格の勉強のほかに、自分なりにJavaアプリやWebアプリのプロジェクトを開発しております。
           <br />
           <br />
           今後も状況に応じて必要性の高いプログラミング言語を中心に学んでいきたいと考えています。
+          よろしくお願いいたします。
         </p>
+        <div>
+          <div className='flex flex-col w-[90%] m-auto justify-around md:space-x-5 md:w-full md:flex-row'>
+            {feScore('午前試験')}
+            {feScore('午後試験')}
+          </div>
+          <h3 className='text-gray-600 text-xl lg:text-3xl font-semibold text-center mt-7'>
+            基本情報技術者試験の成績
+          </h3>
+        </div>
       </div>
     </div>
   )

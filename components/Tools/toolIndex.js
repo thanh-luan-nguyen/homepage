@@ -18,6 +18,7 @@ const backend = [
   'mysql',
   'firebase',
   'servlet',
+  'php',
 ]
 const other = ['git', 'npm', 'webpack', 'heroku', 'github', 'jest', 'jasmine']
 
