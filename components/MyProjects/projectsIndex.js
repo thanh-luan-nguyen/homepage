@@ -86,6 +86,37 @@ const myProjects = [
 
   // *************************************************
   {
+    name: 'todolist app',
+    gif: '/projects/todolist.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/to-do-list',
+    code: 'https://github.com/thanh-luan-nguyen/to-do-list',
+  },
+  {
+    name: 'cv-builder',
+    gif: '/projects/cv-builder.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/cv-builder',
+    code: 'https://github.com/thanh-luan-nguyen/cv-builder',
+  },
+  {
+    name: 'faekbook',
+    gif: '/projects/faekbook.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/faekbook',
+    code: 'https://github.com/thanh-luan-nguyen/faekbook',
+  },
+
+  {
+    name: 'shopping website',
+    gif: '/projects/shopping.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/shopping-cart',
+    code: 'https://github.com/thanh-luan-nguyen/shopping-cart',
+  },
+  {
+    name: 'weather app',
+    gif: '/projects/weather.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/weather-app',
+    code: 'https://github.com/thanh-luan-nguyen/weather-app',
+  },
+  {
     name: 'Google homepage',
     gif: '/projects/google.gif',
     demo: 'https://thanh-luan-nguyen.github.io/google-homepage',
@@ -106,7 +137,7 @@ const myProjects = [
   {
     name: 'calculator app',
     gif: '/projects/calculator.gif',
-    demo: 'https://github.com/thanh-luan-nguyen/thanh-luan-nguyen/blob/main/project_preview_gifs/theOdinProject/TicTacToe.gif',
+    demo: 'https://thanh-luan-nguyen.github.io/calculator-app',
     code: 'https://github.com/thanh-luan-nguyen/calculator-app',
   },
   {
@@ -139,36 +170,7 @@ const myProjects = [
     demo: 'https://thanh-luan-nguyen.github.io/book-keeping-app',
     code: 'https://github.com/thanh-luan-nguyen/book-keeping-app',
   },
-  {
-    name: 'cv-builder',
-    gif: '/projects/cv-builder.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/cv-builder',
-    code: 'https://github.com/thanh-luan-nguyen/cv-builder',
-  },
-  {
-    name: 'weather app',
-    gif: '/projects/weather.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/weather-app',
-    code: 'https://github.com/thanh-luan-nguyen/weather-app',
-  },
-  {
-    name: 'todolist app',
-    gif: '/projects/todolist.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/to-do-list',
-    code: 'https://github.com/thanh-luan-nguyen/to-do-list',
-  },
-  {
-    name: 'shopping website',
-    gif: '/projects/shopping.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/shopping-cart',
-    code: 'https://github.com/thanh-luan-nguyen/shopping-cart',
-  },
-  {
-    name: 'faekbook',
-    gif: '/projects/faekbook.gif',
-    demo: 'https://thanh-luan-nguyen.github.io/faekbook',
-    code: 'https://github.com/thanh-luan-nguyen/faekbook',
-  },
+
   // *************************************************
   // {
   //   name: 'Google homepage',

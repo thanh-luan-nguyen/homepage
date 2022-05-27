@@ -20,7 +20,7 @@ const backend = [
   'servlet',
   'php',
 ]
-const other = ['git', 'npm', 'webpack', 'heroku', 'github', 'jest', 'jasmine']
+const other = ['git', 'npm', 'webpack', 'heroku', 'github', 'jest', 'vscode']
 
 export const frontendImages = []
 export const backendImages = []

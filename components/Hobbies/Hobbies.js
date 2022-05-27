@@ -6,7 +6,7 @@ export default function Hobbies() {
     <div className={styles.WhenIDontCode}>
       <Title>趣味</Title>
 
-      <div className={styles.HobbiesContainer}>
+      <div className={styles.HobbiesContainer + ' scale-[1.25] lg:scale-[1.1]'}>
         <div mode='light' className={styles.Programming}></div>
         <div className={styles.Piano}></div>
         <div mode='light' className={styles.Reading}></div>

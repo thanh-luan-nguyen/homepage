@@ -11,9 +11,9 @@ const highlightText = text => {
 const feScore = shiken => {
   const url = 'images/' + shiken + '.png'
   return (
-    <div className='relative w-auto mt-5'>
+    <div className='relative w-auto mt-5 shadow-2xl'>
       <img src={url} alt='shiken' className='w-full rounded-xl' />
-      <div className='absolute top-16 lg:top-20 left-4 md:left-8 lg:left-16 font-semibold bg-black md:text-lg rounded p-2 text-white'>
+      <div className='absolute top-16 lg:top-20 left-4 md:left-8 lg:left-16 font-semibold bg-black md:text-lg rounded p-1 text-white border-4 border-red-500'>
         {shiken}
       </div>
     </div>
@@ -58,7 +58,7 @@ export default function AboutMe() {
           よろしくお願いいたします。
         </p>
         <div>
-          <div className='flex flex-col w-[90%] m-auto justify-around md:space-x-5 md:w-full md:flex-row'>
+          <div className='flex flex-col w-[90%] m-auto justify-center lg:space-x-10 md:w-full md:flex-row '>
             {feScore('午前試験')}
             {feScore('午後試験')}
           </div>
