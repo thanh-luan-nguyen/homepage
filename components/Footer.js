@@ -36,15 +36,15 @@ export default function Footer() {
         <div className='flex flex-col md:items-start'>
           <div className='flex justify-center items-center'>
             <ImPhone className='inline-block mr-2' />
-            <span>(+81) 080-4692-4098</span>
+            <span>(+81) 080-****-****</span>
           </div>
           <div className='flex justify-center items-center'>
             <MdEmail className='inline-block mr-2' />
-            <span>email@thanhluannguyen.com</span>
+            <span>***********</span>
           </div>
           <div className='flex justify-center items-center'>
             <MdPlace className='inline-block mr-2' />
-            <span>東京都足立区竹ノ塚２丁目</span>
+            <span>東京都足立区********</span>
           </div>
         </div>
         <div className='flex flex-col md:items-start md:space-y-4'>
