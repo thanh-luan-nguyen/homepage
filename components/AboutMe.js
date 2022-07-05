@@ -33,7 +33,7 @@ export default function AboutMe() {
         <p className='text-gray-50 text-lg lg:text-2xl font-semibold'>
           私は１年間以上にわたって独学でプログラミングと開発を勉強してきました。フロンドエンド系の
           {highlightText('HTML, CSS, Javascript')}
-          はもちろん, バックエンド系の{highlightText('Java-servlet , NodeJS')}
+          はもちろん, バックエンド系の{highlightText('SpringBoot , NodeJS')}
           に関しても知見があります。Javascriptライブラリに関しては自分のプロジェクトの開発で
           {highlightText('React, NextJs, jQuery, Redux')}
           等の知見があります。コードバージョン管理に関しては、
